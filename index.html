@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Big Dream</title>
+        <meta name="description" content="Simple Landing page animation using GSAP" />
+        <meta name="copyright" content="Jan-2021">
+        <meta name="author" content="Zaids zaids2641@gmail.com">        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./assets/css/styles.css">
+        <link rel="stylesheet" href="./fontawesome-5.15.2/css/all.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <header>
+            <nav>
+                <h3 id="logo">Big Dream</h3>
+                <ul class="nav-links">
+                    <li class="nav-items nav-items-home active"><a href="#"> Home</a></li>
+                    <li class="nav-items nav-items-about"><a href="#"> About</a></li>
+                    <li class="nav-items nav-items-contact"><a href="#"> Contact</a></li>
+                </ul>
+                <!-- <img src="./images/hamburger.png" alt="hamburger"> -->
+                <button type="button" class="openmenu hamburger" onclick="toggleOpen()"><i class="fas fa-align-right"></i></button>
+                <div id="sidebar" class="sidebar">
+                    <a href="javascript:void(0)" class="close" onclick="toggleClose()">×</a>
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Contact</a>
+                  </div>
+            </nav>
+
+
+            <section>
+                <div class="hero">
+                    <img src="./images/bg-white.jpg" alt="hero">
+                    <h1 class="headline">Big Dream</h1>
+                </div>
+            </section>
+
+        </header>
+        <div class="slider"></div>
+
+
+        
+        <div class="divider"></div>
+        <footer>
+            <div class="footer">
+                <div class="footer-content">
+                    <span class="span-left">&copy; Copyright <script>document.write(new Date().getFullYear())</script> &hearts; <strong>Zaids</strong>  </span>
+                    <span class="span-right"><strong>Big Dream</strong>. Simple Animated Landing Page</span>                                    
+                </div>
+            </div>
+        </footer>
+
+
+        <!-- -->
+        <script>
+            function toggleOpen() {
+              document.getElementById("sidebar").style.width = "250px";
+              document.getElementById("main").style.marginLeft = "250px";
+            }
+            
+            function toggleClose() {
+              document.getElementById("sidebar").style.width = "0";
+              document.getElementById("main").style.marginLeft= "0";
+            }
+            </script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha512-DkPsH9LzNzZaZjCszwKrooKwgjArJDiEjA5tTgr3YX4E6TYv93ICS8T41yFHJnnSmGpnf0Mvb5NhScYbwvhn2w==" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js" integrity="sha512-0xrMWUXzEAc+VY7k48pWd5YT6ig03p4KARKxs4Bqxb9atrcn2fV41fWs+YXTKb8lD2sbPAmZMjKENiyzM/Gagw==" crossorigin="anonymous"></script>
+        
+        <script src="./assets/js/scripts.js" async defer></script>
+    </body>
+</html>
