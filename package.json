@@ -1,0 +1,37 @@
+{
+  "name": "bigdream",
+  "version": "1.0.0",
+  "description": "Simple Page Animation With Hiwghway and GSAP",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zaids2641/BigDream.git"
+  },
+  "keywords": [
+    "animation",
+    "page",
+    "animation",
+    "highway",
+    "gsap",
+    "html",
+    "animation"
+  ],
+  "author": "Zaids",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zaids2641/BigDream/issues"
+  },
+  "homepage": "https://github.com/zaids2641/BigDream#readme",
+  "dependencies": {
+    "@dogstudio/highway": "^2.2.1",
+    "parcel": "^1.12.4"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  }
+}

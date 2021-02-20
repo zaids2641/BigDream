@@ -6,6 +6,9 @@
 # Fontawesome
 ./fontawesome-5.15.2/
 
+# Modules
+node_modules
+node_modules/
 
 # production
 
